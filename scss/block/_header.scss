@@ -1,0 +1,94 @@
+.header {
+    padding-top: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../img/header_bg.png);
+    background-position: center -426px;
+}
+
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__main{
+    display: flex;
+    align-items: center;
+    gap: 64px
+}
+.header__iteam{
+    display: none;
+    align-items: center;
+    gap: 40px;
+}
+.header__link{
+    font-weight: 700;
+    color: #36536B;
+    font-family: Public Sans;
+    transition: .5s; 
+    font-size: 15px;
+    opacity: 0.7;
+}
+.header__link:hover {
+    color: #36536B;
+    opacity: 1;
+}
+.header__menu{
+    background-image: url(../../img/header_menu.svg);
+    width: 28px;
+    height: 17px;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+.header__btn{
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 26.5px;
+    padding-right: 24.5px;
+    align-items: center;
+    transition: 0.4s;
+    display: none;
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115px;
+    border-radius: 24px;
+    background-color: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+.header__btn:hover {
+    background: color #da6d97;
+}
+
+@media screen and (min-width: 765px){
+    .header{
+        background-position: center -302px;
+        background-size: 150%;
+        background-image: url(/img/header_bg_t.png)   
+    }
+    .header__menu{
+        display: none;
+    }
+    .header__btn{
+        display: inline-block;
+    }
+    .header__link{
+        color: #36536B;
+        font-size: 15px;
+        font-weight: 700;   
+    }
+    .header__iteam{
+        display: flex;
+    }
+}
+@media screen and (min-width:990px){
+    .header{
+        background-size: 780px;
+        background-position: calc(50% + 450px) -150px;
+        background-repeat: no-repeat;
+        background-image: url(../../img/headerbackground.png);
+    }
+}
